@@ -1,0 +1,172 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>Table of Contents - A Concise Guide to the SWF File Format</title>
+
+<style type="text/css">
+<!--
+H1	{font-family: Arial, Helvetica, sans-serif;
+		 font-size: 24pt;
+		 font-weight: 900;
+		}
+H2	{font-family: Arial, Helvetica, sans-serif;
+		 font-size: 18pt;
+		 font-weight: 700;
+		}
+H3	{font-family: Arial, Helvetica, sans-serif;
+		 font-size: 14pt;
+		 font-weight: 700;
+		}
+H4	{font-family: Arial, Helvetica, sans-serif;
+		 font-size: 12pt;
+		 font-weight: 700;
+		}
+H5	{font-family: Arial, Helvetica, sans-serif;
+		 font-size: 12pt;
+		 font-weight: 500;
+		}
+.runInHead	{font-family: Arial, Helvetica, sans-serif; 
+						 font-size: 11pt; 
+						 font-weight: 700;
+						}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" link="#FF0000" vlink="#333399" text="#000000">
+
+<h1 align="center">A Concise Guide to the SWF File Format</h1>
+
+<h2>Table of Contents</h2>
+
+<ul>
+  <li><a href="SWFfileformat.html">SWF File Format Specification</a> 
+    <ul>
+	<li><a href="SWFfileformat.html#h2BasicConcepts">Basic Concepts</a>
+		<ul>
+		<li><a href="SWFfileformat.html#h3ContainerFormat">Container Format</a>
+		<li><a href="SWFfileformat.html#h3TypesofTags">Types of Tags</a>
+		<li><a href="SWFfileformat.html#h3TagOrderingandStreaming">Tag Ordering and Streaming</a>
+		<li><a href="SWFfileformat.html#h3CharactersandtheDictionary">Characters and the Dictionary</a>
+		<li><a href="SWFfileformat.html#h3DisplayList">Display List</a>
+		<li><a href="SWFfileformat.html#h3NumbersandCoordinates">Numbers and Coordinates</a>
+		<li><a href="SWFfileformat.html#h3Transforms">Transforms</a>
+		
+          <li><a href="SWFfileformat.html#h3ProcessingaSWFFile">Processing 
+            a SWF File</a> 
+          <li><a href="SWFfileformat.html#h3FileCompressionStrategy">File Compression Strategy</a>
+		<li><a href="SWFfileformat.html#h3ExtensionMechanism">Extension Mechanism</a>
+		</ul>
+	
+      <li><a href="SWFfileformat.html#h2SampleSWFFiles">Sample SWF Files</a> 
+    </ul>
+  <li><a href="SWFfilereference.html">SWF File Reference</a> 
+    <ul>
+	<li><a href="SWFfilereference.html#h2BasicDataTypes">Basic Data Types</a>
+		<ul>
+		<li><a href="SWFfilereference.html#h3BitValues">Bit Values</a>
+		<li><a href="SWFfilereference.html#h3IntegerValues">Integer Values</a>
+		<li><a href="SWFfilereference.html#h3FixedPointValues">Fixed-Point Values</a>
+		<li><a href="SWFfilereference.html#h3ColorValues">Color Values</a>
+		<li><a href="SWFfilereference.html#h3ColorWithAlphaValues">ColorWithAlpha Values</a>
+		<li><a href="SWFfilereference.html#h3RectangleValues">Rectangle Values</a>
+		<li><a href="SWFfilereference.html#h3MatrixValues">Matrix Values</a>
+		<li><a href="SWFfilereference.html#h3ColorTransformValues">Color Transform Values</a>
+		<li><a href="SWFfilereference.html#h3ColorTransformwithAlphaValues">Color Transform with Alpha Values</a>
+		<li><a href="SWFfilereference.html#h3StringValues">String Values</a>
+		</ul>
+	
+      <li><a href="SWFfilereference.html#h2SWFFileTags">SWF File Tags</a> 
+        <ul>
+			<ul>
+			<li><a href="SWFfilereference.html#h4Definitiontags">Definition tags</a>
+			<li><a href="SWFfilereference.html#h4ControltagsSWF">Control tags</a>
+			</ul>
+		</ul>
+	<li><a href="SWFfilereference.html#h2DefinitionTags">Definition Tags</a>
+		<ul>
+		<li><a href="SWFfilereference.html#h3ShapeArchitecture">Shape Architecture</a>
+			<ul>
+			<li><a href="SWFfilereference.html#h4FillTypes">Fill Types</a>
+			<li><a href="SWFfilereference.html#h4GradientValues">Gradient Values</a>
+			<li><a href="SWFfilereference.html#h4LineStyleValues">Line Style Values</a>
+			<li><a href="SWFfilereference.html#h4ShapeValues">Shape Values</a>
+			<li><a href="SWFfilereference.html#h4EdgeRecords">Edge Records</a>
+			<li><a href="SWFfilereference.html#h4DefineShape">DefineShape</a>
+			<li><a href="SWFfilereference.html#h4DefineShape2">DefineShape2</a>
+			<li><a href="SWFfilereference.html#h4DefineShape3">DefineShape3</a>
+			<li><a href="SWFfilereference.html#h4DefineMorphShape">DefineMorphShape</a>
+			<li><a href="SWFfilereference.html#h4MorphGradientValues">Morph Gradient Values</a>
+			<li><a href="SWFfilereference.html#h4MorphLineStyleValues">Morph Line Style Values</a>
+			</ul>
+		<li><a href="SWFfilereference.html#h3Bitmaps">Bitmaps</a>
+			<ul>
+			<li><a href="SWFfilereference.html#h4DefineBits">DefineBits</a>
+			<li><a href="SWFfilereference.html#h4DefineBitsJPEG2">DefineBitsJPEG2</a>
+			<li><a href="SWFfilereference.html#h4DefineBitsJPEG3">DefineBitsJPEG3</a>
+			<li><a href="SWFfilereference.html#h4DefineBitsLossless">DefineBitsLossless</a>
+			<li><a href="SWFfilereference.html#h4DefineBitsLossless2">DefineBitsLossless2</a>
+			<li><a href="SWFfilereference.html#h4JPEGTables">JPEGTables</a>
+			</ul>
+		<li><a href="SWFfilereference.html#h3Buttons">Buttons</a>
+			<ul>
+			<li><a href="SWFfilereference.html#h4DefineButton">DefineButton</a>
+			<li><a href="SWFfilereference.html#h4DefineButton2">DefineButton2</a>
+			<li><a href="SWFfilereference.html#h4DefineButtonCxform">DefineButtonCxform</a>
+			<li><a href="SWFfilereference.html#h4DefineButtonSound">DefineButtonSound</a>
+			</ul>
+		<li><a href="SWFfilereference.html#h3FontsandText">Fonts and Text</a>
+			<ul>
+			<li><a href="SWFfilereference.html#h4DefineFont">DefineFont</a>
+			<li><a href="SWFfilereference.html#h4DefineFont2">DefineFont2</a>
+			<li><a href="SWFfilereference.html#h4DefineFontInfo">DefineFontInfo</a>
+			<li><a href="SWFfilereference.html#h4DefineText">DefineText</a>
+			<li><a href="SWFfilereference.html#h4DefineText2">DefineText2</a>
+			</ul>
+		<li><a href="SWFfilereference.html#h3Sounds">Sounds</a>
+			<ul>
+			<li><a href="SWFfilereference.html#h4SoundInformationValues">Sound Information Values</a>
+			<li><a href="SWFfilereference.html#h4DefineSound">DefineSound</a>
+			<li><a href="SWFfilereference.html#h4SoundStreamBlock">SoundStreamBlock</a>
+			<li><a href="SWFfilereference.html#h4SoundStreamHead">SoundStreamHead</a>
+			<li><a href="SWFfilereference.html#h4SoundStreamHead2">SoundStreamHead2</a>
+			</ul>
+		<li><a href="SWFfilereference.html#h3Sprites">Sprites</a>
+			<ul>
+			<li><a href="SWFfilereference.html#h4DefineSprite">DefineSprite</a>
+			</ul>
+		</ul>
+	<li><a href="SWFfilereference.html#h2ControlTags">Control Tags</a>
+		<ul>
+			<ul>
+			<li><a href="SWFfilereference.html#h4DisplayListtags">Display List tags</a>
+			<li><a href="SWFfilereference.html#h4ControltagsControl">Control tags</a>
+			<li><a href="SWFfilereference.html#h4Actiontags">Action tags</a>
+			</ul>
+		<li><a href="SWFfilereference.html#h3DisplayList">Display List</a>
+			<ul>
+			<li><a href="SWFfilereference.html#h4PlaceObject">PlaceObject</a>
+			<li><a href="SWFfilereference.html#h4PlaceObject2">PlaceObject2</a>
+			<li><a href="SWFfilereference.html#h4RemoveObject">RemoveObject</a>
+			<li><a href="SWFfilereference.html#h4RemoveObject2">RemoveObject2</a>
+			<li><a href="SWFfilereference.html#h4ShowFrame">ShowFrame</a>
+			</ul>
+		<li><a href="SWFfilereference.html#h3Control">Control</a>
+			<ul>
+			<li><a href="SWFfilereference.html#h4SetBackgroundColor">SetBackgroundColor</a>
+			<li><a href="SWFfilereference.html#h4FrameLabel">FrameLabel</a>
+			<li><a href="SWFfilereference.html#h4Protect">Protect</a>
+			<li><a href="SWFfilereference.html#h4StartSound">StartSound</a>
+			<li><a href="SWFfilereference.html#h4End">End</a>
+			</ul>
+		<li><a href="SWFfilereference.html#h3Actions">Actions</a>
+			<ul>
+			<li><a href="SWFfilereference.html#h4ActionValues">Action Values</a>
+			<li><a href="SWFfilereference.html#h4DoAction">DoAction</a>
+			</ul>
+		</ul>
+	</ul>
+<li><a href="terminology.html">Terminology</a>
+</ul>
+
+</body>
+</html>

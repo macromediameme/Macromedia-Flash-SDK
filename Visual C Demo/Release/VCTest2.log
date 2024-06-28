@@ -1,0 +1,9 @@
+﻿  StdAfx.cpp
+  _WIN32_WINNT not defined. Defaulting to _WIN32_WINNT_MAXVER (see WinSDKVer.h)
+  shockwaveflash.cpp
+  VCTest2.cpp
+VCTest2.cpp(52): warning C4996: 'CWinApp::Enable3dControls': CWinApp::Enable3dControls is no longer needed. You should remove this call.
+          C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\atlmfc\include\afxwin.h(5361) : see declaration of 'CWinApp::Enable3dControls'
+  VCTest2Dlg.cpp
+  Generating Code...
+  VCTest2.vcxproj -> D:\Founder\Jonathan Moore\Creative Cloud\Flash Certification\Flash SDK\Visual C Demo\.\Release\VCTest2.exe

@@ -1,0 +1,42 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: VCTest2 - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"Release/VCTest2.res" /d "NDEBUG" /d "_AFXDLL" "D:\Macromedia\Flash 4\Docs\flashsdk\Visual C Demo\VCTest2.rc"" 
+Creating temporary file "C:\WINDOWS\TEMP\RSPA1E0.TMP" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /Fp"Release/VCTest2.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"D:\Macromedia\Flash 4\Docs\flashsdk\Visual C Demo\shockwaveflash.cpp"
+"D:\Macromedia\Flash 4\Docs\flashsdk\Visual C Demo\VCTest2.cpp"
+"D:\Macromedia\Flash 4\Docs\flashsdk\Visual C Demo\VCTest2Dlg.cpp"
+]
+Creating command line "cl.exe @C:\WINDOWS\TEMP\RSPA1E0.TMP" 
+Creating temporary file "C:\WINDOWS\TEMP\RSPA1E1.TMP" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /Fp"Release/VCTest2.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"D:\Macromedia\Flash 4\Docs\flashsdk\Visual C Demo\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\WINDOWS\TEMP\RSPA1E1.TMP" 
+Creating command line "link.exe /nologo /subsystem:windows /incremental:no /pdb:"Release/VCTest2.pdb" /machine:I386 /out:"Release/VCTest2.exe"  ".\Release\shockwaveflash.obj" ".\Release\StdAfx.obj" ".\Release\VCTest2.obj" ".\Release\VCTest2Dlg.obj" ".\Release\VCTest2.res" "
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+shockwaveflash.cpp
+VCTest2.cpp
+VCTest2Dlg.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+VCTest2.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

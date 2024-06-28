@@ -1,0 +1,1 @@
+urlsubst -i src.swf -o dst.swf -v A 57859;0;0;120316 -v B http://www.macromedia.com
